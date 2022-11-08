@@ -11,34 +11,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 </head>
 
 <body>
     <header class="header">
-            <a class="logo" href=""><span class="accent">Web</span>Studio </a>
-            <nav>
+        <div class="container nav">
+            <a class="logo" href="./index.html"><span class="accent">Web</span>Studio </a>
+            <nav class="main-nav">
                 <ul class="site-nav list">
-                    <li><a class="site-nav-link" href="#">Студія</a></li>
-                    <li><a class="site-nav-link" href="./portfolio.html">Портфоліо</a></li>
-                    <li><a class="site-nav-link" href="#">Контакти</a></li>
+                    <li class="item"><a class="site-nav-link" href="./index.html">Студія</a></li>
+                    <li class="item"><a class="site-nav-link" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="item"><a class="site-nav-link" href="#">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="contact-nav list">
-                <li>
+                <li class="item">
                     <a class="contact-nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li>
+                <li class="item">
                     <a class="contact-nav-link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
+            </div>
     </header>
 
     <main>
         <section class="hero">
+            <div class="container">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
             <button class="hero-button">Замовити послугу</button>
+            </div>
         </section>
-        <section class="section">
+        <div class="container">
             <!--заголовок для асистивних технологій-->
             <h2 class="">Наші переваги</h2>
                 <ul class="feature-list list">
@@ -60,9 +65,11 @@
                     </li>
                 
                 </ul>
+            </div>
         </section>
       
         <section class="section">
+            <div class="container">
             <h2 class="section-title">Чим ми займаємося</h2>
             <ul class="list">
                 <li>
@@ -75,8 +82,10 @@
                     <img src="./img/box3.jpg" alt="design" width="370" />
                 </li>
             </ul>
+            </div>
         </section>
         <section class="section">
+            <div class="container">
             <h2 class="section-title">Наша команда</h2>
             <ul class="staff-list list">
                 <li>
@@ -100,9 +109,11 @@
                     <p class="staff-prof">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <footer class="full-address">
+        <div class="container">
         <a href="" class="logo-footer"><span class="accent">Web</span>Studio</a>
         <address>
             <ul class="list">
@@ -117,6 +128,7 @@
                 </li>
             </ul>
         </address>
+        </div>
     </footer>
 </body>
 
