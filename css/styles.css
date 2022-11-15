@@ -5,6 +5,7 @@
     --white-color: #FFFFFF;
     --primary-background-color:#FFFFFF;
     --secondary-background-color:#F5F5F5;
+    --color-icon: #AFB1B8;
 }
 
 * {
@@ -24,7 +25,7 @@
 
 body {
     color: var(--primary-text-color);
-    background-color: var(--primary-background-color)
+    background-color: var(--primary-background-color);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -144,6 +145,17 @@ header a {
     padding-bottom: 200px;
     text-align: center;
     background-color: #2F303A;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/hero.jpg);
+        height: 600px;
+            max-width: 1600px;
+            margin-left: auto;
+            margin-right: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+   
 }
 
 .hero-title {
@@ -290,6 +302,10 @@ header a {
     text-align: center;
 }
 
+.staff-prof{
+    margin-bottom: 16px;
+}
+
 
 
 .staff-info {
@@ -298,10 +314,45 @@ header a {
     padding-bottom: 30px;
 }
 
+.staff-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-item {
+    list-style: none;
+}
+
 .staff-item{
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #AFB1B8;
+}
+
+.social-links:hover,
+.social-links:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.social-icon {
+    fill: var(--color-icon);
+    fill: currentColor;
 }
 
 /*---------------------------portfolio-------------------*/
