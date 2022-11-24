@@ -121,7 +121,7 @@ header a {
     color: var(--accent-color);
 }
 
-.current::after {
+.site-nav-link.current::after {
     content: '';
     position: absolute;
     width: 100%;
