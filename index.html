@@ -28,7 +28,7 @@
                     <li class="item"><a class="site-nav-link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="item"><a class="site-nav-link" href="#">Контакти</a></li>
                 </ul>
-            </nav>
+                </nav>
             <ul class="contact-nav list">
                 <li class="item">
                     <a class="contact-nav-link" href="mailto:info@devstudio.com">
@@ -50,7 +50,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для<br> вашого бізнесу</h1>
-                <button class="hero-button">Замовити послугу</button>
+                <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
 
@@ -109,14 +109,29 @@
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="work-list list">
                     <li class="item">
+                        <div class="work-box">
                         <img class="img" src="./img/box1.jpg" alt="programming" width="370" />
+                        <div class="work-block">
+                            <h3 class="work-text">Десктопні додатки</h3>
+                        </div>
+                        </div>
                     </li>
                     <li class="item">
+                        <div class="work-box">
                         <img class="img" src="./img/box2.jpg" alt="creating an app" width="370" />
+                        <div class="work-block">
+                            <h3 class="work-text">Мобільні додатки</h3>
+                        </div>
                     </li>
                     <li class="item">
+                        <div class="work-box">
                         <img class="img" src="./img/box3.jpg" alt="design" width="370" />
+                        <div class="work-block">
+                            <h3 class="work-text">Дизайнерські рішення</h3>
+                        </div>
                     </li>
+                    </div>
+                </div>
                 </ul>
             </div>
         </section>
@@ -421,6 +436,16 @@
         </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden"  data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+            <svg class="smodal-close-icon" width="18" height="18">
+                <use href="./img/icons.svg#icon-close-button"></use>
+            </svg>
+        </button>
+    </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
