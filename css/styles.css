@@ -146,6 +146,7 @@ header a {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-nav-link:hover,
@@ -220,7 +221,7 @@ header a {
 .hero-button.current,
 .hero-button:hover,
 .hero-button:focus {
-    color: var(--accent-color);
+    color: var(--white-color);
     background: var(--accent-color);
 }
 
@@ -412,7 +413,7 @@ header a {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     color: #AFB1B8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links:hover,
@@ -444,7 +445,7 @@ header a {
     align-items: center;
     color: #AFB1B8;
     border: 1px solid currentColor;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
@@ -473,12 +474,13 @@ header a {
 
     cursor: pointer;
     color: var(--primary-text-color);
+    background-color: #F5F4FA;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: 0.03em;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.current,
@@ -488,6 +490,7 @@ header a {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--white-color);
     background: var(--accent-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .button-list .item:not(:last-child) {
@@ -510,11 +513,13 @@ header a {
     margin-top: 0;
     margin-right: 30px;
     margin-bottom: 30px;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-item:hover .project-text {
     transform: translateY(0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .project-item:nth-child(3n) {
@@ -544,6 +549,7 @@ header a {
     padding: 63px 24px;
     transform: translateY(100%);
     overflow: auto;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -663,7 +669,7 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
     width: 44px;
@@ -701,7 +707,7 @@ header a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms; cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
