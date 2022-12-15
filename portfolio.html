@@ -13,30 +13,30 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="container nav">
-            <a class="logo" href="./index.html"><span class="accent">Web</span>Studio </a>
-            <nav class="main-nav">
-                <ul class="site-nav list">
-                    <li class="item"><a class="site-nav-link" href="./index.html">Студія</a></li>
-                    <li class="item"><a class="site-nav-link current" href="./portfolio.html">Портфоліо</a></li>
-                    <li class="item"><a class="site-nav-link" href="#">Контакти</a></li>
+        <div class="container header-flex">
+            <a class="header__logo" href="./index.html"><span class="header__logo--accent">Web</span>Studio </a>
+            <nav class="header-flex menu">
+                <ul class="header-flex site-nav list">
+                    <li class="site-nav__item"><a class="site-nav__link current" href="./index.html">Студія</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="#">Контакти</a></li>
                 </ul>
             </nav>
-            <ul class="contact-nav list">
-                <li class="item">
-                    <a class="contact-nav-link" href="mailto:info@devstudio.com">
-                        <svg class="contact-icon" width="16" height="12">
+            <ul class="header-flex contact-nav list">
+                <li class="contact-nav__item">
+                    <a class="contact-nav__link" href="mailto:info@devstudio.com">
+                        <svg class="contact-nav__icon" width="16" height="12">
                             <use href="./img/icons.svg#icon-mail"></use>
                         </svg>info@devstudio.com</a>
                 </li>
                 <li class="item">
-                    <a class="contact-nav-link" href="tel:+380961111111">
-                        <svg class="contact-icon" width="10" height="16">
+                    <a class="contact-nav__link" href="tel:+380961111111">
+                        <svg class="contact-nav__icon" width="10" height="16">
                             <use href="./img/icons.svg#icon-phone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
@@ -192,7 +192,7 @@
     <footer class="full-address">
         <div class="container">
             <div class="footer-address">
-                <a href="" class="logo-footer"><span class="accent">Web</span>Studio</a>
+                <a href="" class="logo-footer"><span class="header__logo--accent">Web</span>Studio</a>
                 <address>
                     <ul class="list">
                         <li class="address-item">
